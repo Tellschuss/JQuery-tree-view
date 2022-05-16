@@ -1,0 +1,76 @@
+* {
+  outline: none
+}        
+
+body{
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            flex-direction: column;
+            color: #fff;
+        }
+
+
+
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        button{
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            margin:0 5px;
+            padding: 0;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        }
+/* 
+        button span{
+            transition: 0.5s;
+        }
+
+        .withSubCategory button:hover > span{
+            transform: rotate(90deg);
+        } */
+
+        a.treeLink{
+            font-size: 25px;
+            color: #fff;
+            display: block;
+            height: 40px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 0 15px;
+        }
+        .central{
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .treeItem:hover >div >.treeLink{
+            background: rgba(255, 255, 255, 0.466);
+        }
+
+        .treeLinkBox{
+            margin-bottom: 5px;
+        }
+
+        .treeParent .treeParent{
+            display: none;
+            padding-left: 25px;
+        }
+
+      .rot90{
+            transform: rotate(90deg);
+        }
